@@ -1,8 +1,8 @@
 import tensorflow as tf
 from sklearn.utils.class_weight import compute_class_weight
 import numpy as np 
-train_data = tf.keras.preprocessing.image_dataset_from_directory("//Users/mac/Downloads/train", image_size=(48,48), batch_size=32, color_mode="grayscale")#we load the training data from a directory using the image_dataset_from_directory function. We specify the path to the directory containing our training images, set the image size to (48, 48), and the batch size to 32. We also set color_mode to "grayscale" since our images are in grayscale.
-test_data=tf.keras.preprocessing.image_dataset_from_directory("/Users/mac/Downloads/train", image_size=(48,48), batch_size=32, color_mode="grayscale")
+train_data = tf.keras.preprocessing.image_dataset_from_directory(<path of the dataset>, image_size=(48,48), batch_size=32, color_mode="grayscale")#we load the training data from a directory using the image_dataset_from_directory function. We specify the path to the directory containing our training images, set the image size to (48, 48), and the batch size to 32. We also set color_mode to "grayscale" since our images are in grayscale.
+test_data=tf.keras.preprocessing.image_dataset_from_directory(<path of the dataset>, image_size=(48,48), batch_size=32, color_mode="grayscale")
 labels = []
 
 for images, lbls in train_data:
